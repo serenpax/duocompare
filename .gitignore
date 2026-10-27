@@ -1,0 +1,8 @@
+node_modules/
+dist/
+target/
+.mimocode/
+.cargo/
+*.log
+.playwright-cli/
+src-tauri/gen/schemas/
