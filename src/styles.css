@@ -102,9 +102,42 @@ button {
   border-color: var(--accent);
 }
 
-.vs {
-  color: var(--muted);
-  font-size: 12px;
+.path-group.drag-over .path-input {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.swap-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  flex: none;
+}
+
+.swap-btn:hover:not(:disabled) {
+  color: var(--accent);
+}
+
+.drop-debug {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  max-width: 640px;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #7CFC00;
+  font-size: 11px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+  z-index: 99;
+  pointer-events: none;
 }
 
 .btn {

@@ -3,6 +3,7 @@ dist/
 target/
 .mimocode/
 .cargo/
+.statsd/
 *.log
 .playwright-cli/
 src-tauri/gen/schemas/

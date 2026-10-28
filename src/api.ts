@@ -1,7 +1,7 @@
 import { mockCompareDirs, mockLoadFileDiff } from "./mock";
 import type { FileDiff, TreeNode } from "./types";
 
-const isTauri = typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
+export const isTauri = typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
 
 export async function compareDirs(left: string, right: string): Promise<TreeNode[]> {
   if (isTauri) {
